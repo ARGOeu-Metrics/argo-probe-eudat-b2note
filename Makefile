@@ -1,6 +1,6 @@
-PKGNAME=nagios-plugins-eudat-gitlab
+PKGNAME=nagios-plugins-eudat-b2note
 SPECFILE=${PKGNAME}.spec
-FILES=Makefile ${SPECFILE} check_gitlab_liveness.sh
+FILES=Makefile ${SPECFILE} check_b2note.sh
 
 PKGVERSION=$(shell grep -s '^Version:' $(SPECFILE) | sed -e 's/Version:\s*//')
 
