@@ -1,7 +1,7 @@
 Name:		nagios-plugins-eudat-b2note
 Version:	1.0
 Release:	1%{?dist}
-Summary:	Nagios gitlab
+Summary:	Nagios Eudat b2note
 License:	GPLv3+
 Packager:	Themis Zamani <themiszamani@gmail.com>
 
@@ -29,7 +29,7 @@ install -m 755 check_b2note.sh %{buildroot}/%{_libexecdir}/argo-monitoring/probe
 %dir /%{_libexecdir}/argo-monitoring/probes/
 %dir /%{_libexecdir}/argo-monitoring/probes/eudat-b2note
 
-%attr(0755,root,root) /%{_libexecdir}/argo-monitoring/probes/eudat-gitlab/check_b2note.sh
+%attr(0755,root,root) /%{_libexecdir}/argo-monitoring/probes/eudat-b2note/check_b2note.sh
 
 %changelog
 * Tue Jul 2 2018 Themis Zamani <themiszamani@gmail.com> - 1.0-1
