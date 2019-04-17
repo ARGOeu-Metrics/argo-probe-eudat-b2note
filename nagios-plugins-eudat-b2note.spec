@@ -1,4 +1,4 @@
-Name:		nagios-plugins-eudat-gitlab
+Name:		nagios-plugins-eudat-b2note
 Version:	1.0
 Release:	1%{?dist}
 Summary:	Nagios gitlab
@@ -20,16 +20,16 @@ Nagios probes to check functionality of cas server
 
 %install
 
-install -d %{buildroot}/%{_libexecdir}/argo-monitoring/probes/eudat-gitlab
-install -d %{buildroot}/%{_sysconfdir}/nagios/plugins/eudat-gitlab
-install -m 755 check_gitlab_liveness.sh %{buildroot}/%{_libexecdir}/argo-monitoring/probes/eudat-gitlab/check_gitlab_liveness.sh
+install -d %{buildroot}/%{_libexecdir}/argo-monitoring/probes/eudat-b2note
+install -d %{buildroot}/%{_sysconfdir}/nagios/plugins/eudat-b2note
+install -m 755 check_b2note.sh %{buildroot}/%{_libexecdir}/argo-monitoring/probes/eudat-b2note/check_b2note.sh
 
 %files
 %dir /%{_libexecdir}/argo-monitoring
 %dir /%{_libexecdir}/argo-monitoring/probes/
-%dir /%{_libexecdir}/argo-monitoring/probes/eudat-gitlab
+%dir /%{_libexecdir}/argo-monitoring/probes/eudat-b2note
 
-%attr(0755,root,root) /%{_libexecdir}/argo-monitoring/probes/eudat-gitlab/check_gitlab_liveness.sh
+%attr(0755,root,root) /%{_libexecdir}/argo-monitoring/probes/eudat-gitlab/check_b2note.sh
 
 %changelog
 * Tue Jul 2 2018 Themis Zamani <themiszamani@gmail.com> - 1.0-1
