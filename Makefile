@@ -1,4 +1,4 @@
-PKGNAME=nagios-plugins-eudat-b2note
+PKGNAME=argo-probe-eudat-b2note
 SPECFILE=${PKGNAME}.spec
 FILES=Makefile ${SPECFILE} check_b2note.sh
 
