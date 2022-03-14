@@ -1,7 +1,7 @@
 B2NOTE probe
 ===========
 
-Nagios probe for the B2NOTE service.
+A script used to check the responsiveness of the B2NOTE service.
 It is implemented as a bash script.
 
 ## Dependencies
